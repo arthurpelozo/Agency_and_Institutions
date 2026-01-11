@@ -1,0 +1,265 @@
+﻿Rscript.exe : Warning message:
+No linha:1 caractere:80
++ ... Causality"; &"C:\Program Files\R\R-4.5.1\bin\Rscript.exe" "scripts\12 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Warning message::String) [], RemoteExc 
+   eption
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+package 'readxl' was built under R version 4.5.2 
+Warning message:
+package 'haven' was built under R version 4.5.2 
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'fixest' was built under R version 4.5.2 
+Warning message:
+package 'ggplot2' was built under R version 4.5.2 
+
+============================================================
+LOADING WORLD BANK DOING BUSINESS DATA - ALL METHODOLOGIES
+============================================================
+
+New names:
+ÔÇó `Procedures (number)` -> `Procedures (number)...19`
+ÔÇó `Time (days)` -> `Time (days)...20`
+ÔÇó `Procedures (number)` -> `Procedures (number)...25`
+ÔÇó `Time (days)` -> `Time (days)...26`
+ÔÇó `Procedures (number)` -> `Procedures (number)...31`
+ÔÇó `Time (days)` -> `Time (days)...32`
+ÔÇó `Time (days)` -> `Time (days)...77`
+There were 50 or more warnings (use warnings() to see the first 50)
+Ô£ô Loaded 3608 rows with 84 columns
+
+Step 1: Combining all three methodology periods...
+Ô£ô Combined data:
+  - Total observations: 2224 
+  - Countries: 213 
+  - Year range: 2009 to 2019 
+  - DB10-14: 740 obs
+  - DB15: 422 obs
+  - DB17-21: 1062 obs
+
+Sample data for select countries:
+# A tibble: 10 ├ù 4
+   economy       year_calendar db_score methodology
+   <chr>                 <dbl>    <dbl> <chr>      
+ 1 Brazil                 2013     55.4 DB15       
+ 2 Brazil                 2019     58.2 DB17-21    
+ 3 China                  2013     59.1 DB15       
+ 4 China                  2019     77.2 DB17-21    
+ 5 Germany                2009     79.3 DB10-14    
+ 6 Germany                2019     78.6 DB17-21    
+ 7 India                  2013     51.9 DB15       
+ 8 India                  2019     71.1 DB17-21    
+ 9 United States          2013     82.6 DB15       
+10 United States          2019     84.0 DB17-21    
+
+
+Step 2: Identifying regulatory reforms...
+Ô£ô Year-over-year changes calculated
+  - Valid comparisons: 2011 
+  - Distribution of score changes:
+     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+-15.31166  -0.07334   0.31347   0.54350   1.18808  10.11228 
+
+Ô£ô Reform thresholds defined:
+  - 50th percentile (minor): 0.31 points
+  - 75th percentile (moderate): 1.19 points
+  - 90th percentile (major): 2.55 points
+
+Ô£ô Reforms identified:
+  - Any improvement (>0.31): 1005 country-years (50.0%)
+  - Moderate (>1.19): 503 country-years (25.0%)
+  - Major (>2.55): 201 country-years (10.0%)
+
+
+Step 3: Identifying treatment timing...
+Ô£ô Treatment countries identified:
+  - Countries with moderate+ reform (2010-2015): 145
+  - Mean reform size: 2.45 points
+  - Reform year distribution:
+
+2010 2011 2012 2013 2014 2015 
+  37   45   19    5   23   16 
+
+Ô£ô Sample treated countries:
+# A tibble: 10 ├ù 3
+   economy                  reform_year score_change
+   <chr>                          <dbl>        <dbl>
+ 1 Serbia                          2015         7.71
+ 2 Guinea-Bissau                   2011         6.60
+ 3 Central African Republic        2011         6.46
+ 4 S├úo Tom├® and Pr├¡ncipe           2011         6.22
+ 5 Burundi                         2011         6.03
+ 6 Kosovo                          2012         5.51
+ 7 Albania                         2014         5.08
+ 8 Solomon Islands                 2010         4.67
+ 9 Lesotho                         2012         4.58
+10 Ukraine                         2010         4.55
+
+
+Step 4: Loading GEM individual-level data...
+Ô£ô Found pre-processed GEM panel data
+Ô£ô GEM panel data loaded:
+  - Observations: 1036410 
+  - Country IDs: 108 
+  - Years: 2009 to 2017 
+
+ÔÜá Country names not available in panel data.
+  Will create simple manual crosswalk for key reform countries.
+
+
+Step 5: Creating country crosswalk for merge...
+Ô£ô Created country crosswalk:
+  - GEM countries: 50 
+
+Sample crosswalk:
+# A tibble: 20 ├ù 3
+   country_code        country_name   country_id
+   <dbl+lbl>           <chr>          <chr>     
+ 1  1 [United States]  United States  1         
+ 2  7 [Russia]         Russia         7         
+ 3 20 [Egypt]          Egypt          20        
+ 4 27 [South Africa]   South Africa   27        
+ 5 30 [Greece]         Greece         30        
+ 6 31 [Netherlands]    Netherlands    31        
+ 7 34 [Spain]          Spain          34        
+ 8 39 [Italy]          Italy          39        
+ 9 41 [Switzerland]    Switzerland    41        
+10 44 [United Kingdom] United Kingdom 44        
+11 46 [Sweden]         Sweden         46        
+12 47 [Norway]         Norway         47        
+13 48 [Poland]         Poland         48        
+14 49 [Germany]        Germany        49        
+15 52 [Mexico]         Mexico         52        
+16 55 [Brazil]         Brazil         55        
+17 56 [Chile]          Chile          56        
+18 57 [Colombia]       Colombia       57        
+19 61 [Australia]      Australia      61        
+20 81 [Japan]          Japan          81        
+
+Ô£ô Reforms matched to GEM countries:
+  - Total reforms:  145 
+  - Matched: 30 
+  - Match rate: 20.7% 
+
+Matched reform countries:
+# A tibble: 15 ├ù 4
+   economy         country_id reform_year score_change
+   <chr>           <chr>            <dbl>        <dbl>
+ 1 Morocco         212               2011         3.58
+ 2 Latvia          371               2011         3.35
+ 3 North Macedonia 389               2011         3.13
+ 4 Chile           56                2011         2.75
+ 5 Slovenia        386               2010         2.59
+ 6 Armenia         374               2011         2.57
+ 7 Greece          30                2012         2.27
+ 8 Portugal        351               2010         2.21
+ 9 Poland          48                2010         1.93
+10 Madagascar      261               2011         1.81
+11 South Africa    27                2011         1.76
+12 Italy           39                2013         1.73
+13 Oman            968               2011         1.70
+14 Belarus         375               2010         1.69
+15 China           86                2014         1.68
+
+
+Step 6: Merging reforms with GEM panel...
+Ô£ô Merge completed:
+  - Total observations: 1036410 
+  - Treated individuals: 440824 (42.5%)
+  - Post-reform obs: 300612 
+  - DiD observations (treated├ùpost): 300612 
+
+
+Step 7: Running DiD analysis with REAL reforms...
+
+Ô£ô Analysis sample:
+  - Observations: 1036410 
+  - Countries: 108 
+  - Treated countries: 27 
+  - Control countries: 81 
+  - Years: 2009 to 2017 
+
+Running basic DiD specification...
+
+============================================================ 
+BASIC DID RESULTS (REAL WORLD BANK REFORMS)
+============================================================ 
+
+OLS estimation, Dep. Var.: tea
+Observations: 1,036,410
+Fixed-effects: country_id: 108,  year: 7
+Standard-errors: Clustered (country_id) 
+         Estimate Std. Error  t value Pr(>|t|) 
+did_term 0.000881   0.008372 0.105196  0.91642 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.318645     Adj. R2: 0.050913
+                 Within R2: 4.048e-7
+
+Ô£ô Effect interpretation:
+  - Control mean (pre-reform): 0.1356
+  - DiD coefficient: 0.0009
+  - Percentage points: 0.09 pp
+  - Percentage change: 0.6%
+
+Ô£ô Results saved to output/12_real_reforms_basic_did.csv
+
+
+============================================================ 
+INTERPRETATION: REAL REFORMS VS RANDOM ASSIGNMENT
+============================================================ 
+
+Comparison:
+  REAL reforms:      0.0009 (p=0.916) - 0.09 pp effect
+
+KEY FINDINGS:
+
+1. REAL REFORM EFFECT: Not statistically significant (p=0.916)
+   - Point estimate: 0.09 percentage points
+   - 100x smaller than random assignment effect!
+
+2. WHY THE DIFFERENCE?
+   - Random assignment created spurious pre-trends
+   - Real reforms are endogenous (countries reform when conditions allow)
+   - This likely ABSORBED true effects into country FE
+
+3. MATCH QUALITY:
+   - 30 of 145 reform countries (20.7%) matched to GEM
+   - Many major reformers (Serbia, Albania, Ukraine) NOT in GEM sample
+   - This reduces statistical power
+
+4. METHODOLOGICAL LESSONS:
+   Ô£ô Combined 3 methodology periods (DB10-14, DB15, DB17-21)
+   Ô£ô Identified 145 reform countries (2010-2015)
+   Ô£ô Used year-over-year score changes (75th percentile threshold)
+   ÔÜá Limited by GEM country coverage (50 vs 213 WB countries)
+
+5. IMPLICATIONS FOR YOUR PAPER:
+   - Random assignment WAS problematic (as robustness tests showed)
+   - Real reforms show NO significant effect
+   - BUT: heterogeneity findings still valid (agency mechanism)
+   - RECOMMENDATION: Frame as descriptive/mechanism paper
+
+
+============================================================ 
+ANALYSIS COMPLETE
+============================================================ 
+
+Next steps:
+1. If match rate low: Create country name crosswalk
+2. Run pre-trend tests with real data
+3. Generate event study plot
+4. Compare real vs random results
+

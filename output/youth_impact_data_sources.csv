@@ -1,0 +1,15 @@
+source,outcome_measured,causal_method,accessibility,priority
+J-PAL Evaluations Database,"Employment, earnings, entrepreneurship","RCTs, DiD, IV",Public (J-PAL website),HIGH - direct training evidence
+World Bank STEP Skills Measurement,"Skills levels, employment outcomes",Cross-country panel,Restricted (World Bank),MEDIUM - skills measurement
+ILO School-to-Work Transition Surveys,"NEET status, employment, training",Cohort tracking,Restricted (ILO),HIGH - youth NEET focus
+OECD PIAAC (Adult Skills),"Skills proficiency, labor outcomes",Cross-country comparison,Public (OECD),MEDIUM - developed countries only
+IZA/World Bank Youth Employment Programs,"Employment, wages, entrepreneurship","RCTs, matching, DiD",Academic databases,HIGH - youth employment focus
+Active Labor Market Program Evaluations,"Job placement, earnings, self-employment","RCTs, regression discontinuity",Academic databases,MEDIUM - broader age groups
+GEM Special Youth Reports,"Youth TEA, opportunity/necessity",Panel data (limited causal),Public (GEM website),HIGH - youth entrepreneurship
+Global Accelerator Learning Initiative (GALI),"Startup survival, job creation, revenue","RCTs, matching",Public (GALI reports),HIGH - accelerator model similar to JE
+Entrepreneurship Education RCTs (various),"Business start rates, survival",RCTs,Academic journals,HIGH - direct entrepreneurship training
+OECD HEInnovate (University Entrepreneurship),Graduate entrepreneurship rates,Panel + matching,Public (OECD),MEDIUM - university context
+University incubator/accelerator data,"Startup creation, support accessed","Before-after, matching",Request from institutions,MEDIUM - selection bias issues
+Brazil Junior Achievement Impact Evaluations,"Member employment, entrepreneurship, skills","RCTs (rare), matching",Request from JE Brazil,CRITICAL - direct JE evidence
+European JE Confederation surveys,Member outcomes vs non-members,Surveys + matching,Request from JADE,CRITICAL - JE network data
+JE member tracking data (if available),Long-term career paths,"Matching, selection correction",Request from national JE confederations,CRITICAL - JE member outcomes

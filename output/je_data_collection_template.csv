@@ -1,0 +1,13 @@
+survey_wave,variable_category,specific_measures,comparison_group,sample_size_needed
+Baseline (JE entry),Demographics,"Age, gender, SES, parents' education, major",Same measures for non-JE students,500 JE + 500 control (minimum)
+Baseline (JE entry),Pre-existing skills,"Business knowledge test, soft skills self-assessment",Same measures,Same
+Baseline (JE entry),Entrepreneurial intentions,Plan to start business? Fear of failure? Self-efficacy?,Same measures,Same
+Midpoint (after 1 year),Skills development,"Skills assessment (business, technical, soft skills)",Same measures,Same
+Midpoint (after 1 year),JE engagement,"Projects completed, hours, roles, training attended",Extracurricular activities for non-JE,Same
+Endline (graduation),Graduation outcomes,"GPA, job offers, internships, further education plans",Same measures,Same
+Endline (graduation),Skills acquisition,"Business knowledge test (same as baseline), soft skills",Same measures,Same
+Follow-up (1 year post-grad),Employment,Employed? Salary? Job type? Job satisfaction?,Same measures,400+ JE + 400+ control (20% attrition)
+Follow-up (1 year post-grad),Entrepreneurship,Started business? Industry? Employees? Revenue? Still operating?,Same measures,Same
+Follow-up (1 year post-grad),Subjective wellbeing,"Life satisfaction, career satisfaction, financial security",Same measures,Same
+Long-term (5 years post-grad),Career trajectories,"Current position, career path, promotions, job changes",Same measures,300+ JE + 300+ control (40% attrition)
+Long-term (5 years post-grad),Long-term entrepreneurship,"Cumulative businesses started, current ownership, outcomes",Same measures,Same

@@ -1,0 +1,3 @@
+Robustness_Check,Coefficient,p_value,Interpretation
+Placebo (false reform),0.008913918487736828,1.840382939088758e-11,Should NOT be significant
+Spillover effect,0.02298168680918223,1.7375962360358404e-16,Should be significant (confirms mechanism)

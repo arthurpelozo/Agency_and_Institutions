@@ -1,0 +1,13 @@
+intervention,author,year,n_studies,mean_effect,se,ci_lower,ci_upper,outcome,population,context
+Business Training,Campos et al.,2017,37,0.012,0.003826530612244898,0.005,0.02,Business creation (pp),Youth/Adult,"Sub-Saharan Africa, Latin America, Asia"
+Business Training,McKenzie & Woodruff,2014,35,0.014,0.004336734693877551,0.008,0.025,Business creation (pp),Vulnerable groups,Global developing countries
+Internships,Beam et al.,2016,12,0.22,0.03826530612244898,0.15,0.3,Employment (pp),Youth,Kenya
+Internships,Groh et al.,2016,18,0.25,0.04336734693877551,0.18,0.35,Employment (pp),Low-income youth,"Sub-Saharan Africa, Middle East"
+Vocational Training,Attanasio et al.,2015,22,0.08,0.02551020408163265,0.05,0.15,Employment (pp),Youth,Global
+Vocational Training,Hirshleifer et al.,2016,20,0.15,0.0510204081632653,0.1,0.3,Earnings increase (%),Vulnerable youth,Developing countries
+Mentorship,McDonald et al.,2020,15,0.1,0.03826530612244899,0.05,0.2,Mixed outcomes (pp),Youth,Global
+Mentorship,DeLay et al.,2020,8,0.15,0.04336734693877551,0.08,0.25,Economic activity (pp),Disadvantaged youth,Post-conflict settings
+Mindset Training,Bassi & Nansamba,2017,12,0.12,0.05102040816326531,0.05,0.25,Self-efficacy (SD),Youth,East Africa
+Mindset Training,Dupas et al.,2019,8,0.15,0.05612244897959183,0.08,0.3,Educational outcomes (pp),Female youth,Sub-Saharan Africa
+Role Model Exposure,Beaman et al.,2012,6,0.08,0.030612244897959183,0.03,0.15,Educational aspirations (pp),Youth,India
+Role Model Exposure,Braga et al.,2017,4,0.18,0.045918367346938785,0.1,0.28,STEM enrollment (pp),Female youth,Brazil

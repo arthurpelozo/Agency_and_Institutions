@@ -1,0 +1,2 @@
+"specification","coefficient","se","pvalue","n_treated_countries","n_control_countries","n_obs","control_mean","effect_pct"
+"Basic DiD (Real WB Reforms)",0.000880657076473773,0.00837155943450419,0.916416996733441,27,81,1036410,0.13560090398364,0.649447791719755

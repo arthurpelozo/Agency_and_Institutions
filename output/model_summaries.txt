@@ -1,0 +1,252 @@
+================================================================================
+MODEL SUMMARIES - HYPOTHESIS TESTING
+================================================================================
+
+MODEL 1: H1 - Individual Entrepreneurial Agency Effect
+tea_binary ~ agency_index + age + gender + hhsize + gemeduc + gemhhinc + gemoccu + gemwork + (1|country)
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: tea_binary ~ agency_index + age + gender + hhsize + gemeduc +  
+    gemhhinc + gemoccu + gemwork + (1 | country)
+   Data: df
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+  21897.3   21981.5  -10938.6   21877.3     33605 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.2477 -0.3588 -0.2578 -0.1751  8.9876 
+
+Random effects:
+ Groups  Name        Variance Std.Dev.
+ country (Intercept) 0.2667   0.5165  
+Number of obs: 33615, groups:  country, 47
+
+Fixed effects:
+               Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -2.494e+00  1.742e-01 -14.318  < 2e-16 ***
+agency_index  6.162e-01  4.645e-02  13.267  < 2e-16 ***
+age           1.674e-02  5.124e-03   3.268  0.00108 ** 
+gender       -2.163e-01  3.622e-02  -5.970 2.37e-09 ***
+hhsize       -2.770e-03  9.155e-03  -0.303  0.76221    
+gemeduc       1.742e-04  4.103e-05   4.246 2.17e-05 ***
+gemhhinc      5.545e-06  5.849e-07   9.480  < 2e-16 ***
+gemoccu       3.005e-01  7.081e-03  42.445  < 2e-16 ***
+gemwork      -4.980e-01  1.289e-02 -38.629  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) agncy_ age    gender hhsize gemedc gmhhnc gemocc
+agency_indx -0.034                                                 
+age         -0.760 -0.002                                          
+gender      -0.231  0.006 -0.049                                   
+hhsize      -0.273 -0.013  0.101 -0.020                            
+gemeduc     -0.220  0.014 -0.056 -0.038  0.076                     
+gemhhinc    -0.045  0.012 -0.024  0.063 -0.105 -0.147              
+gemoccu     -0.151 -0.001  0.040 -0.033 -0.047  0.078  0.048       
+gemwork     -0.222  0.037  0.216 -0.115 -0.009 -0.007  0.031 -0.193
+fit warnings:
+Some predictor variables are on very different scales: consider rescaling. 
+You may also use (g)lmerControl(autoscale = TRUE) to improve numerical stability.
+
+
+MODEL 2: H2 - Agency × Institutional Quality Interaction
+tea_binary ~ agency_index + nes_inq_std + agency_index:nes_inq_std + controls + (1|country)
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: tea_binary ~ agency_index + nes_inq_std + agency_index:nes_inq_std +  
+    age + gender + hhsize + gemeduc + gemhhinc + gemoccu + gemwork +  
+    (1 | country)
+   Data: df
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+  21900.1   22001.2  -10938.1   21876.1     33603 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.2826 -0.3585 -0.2579 -0.1750  9.0329 
+
+Random effects:
+ Groups  Name        Variance Std.Dev.
+ country (Intercept) 0.2647   0.5145  
+Number of obs: 33615, groups:  country, 47
+
+Fixed effects:
+                           Estimate Std. Error z value Pr(>|z|)    
+(Intercept)              -2.494e+00  1.741e-01 -14.325  < 2e-16 ***
+agency_index              6.182e-01  4.651e-02  13.293  < 2e-16 ***
+nes_inq_std              -9.768e-03  7.569e-02  -0.129  0.89733    
+age                       1.675e-02  5.124e-03   3.269  0.00108 ** 
+gender                   -2.164e-01  3.622e-02  -5.974 2.31e-09 ***
+hhsize                   -2.955e-03  9.160e-03  -0.323  0.74700    
+gemeduc                   1.747e-04  4.105e-05   4.256 2.08e-05 ***
+gemhhinc                  5.547e-06  5.850e-07   9.481  < 2e-16 ***
+gemoccu                   3.006e-01  7.084e-03  42.432  < 2e-16 ***
+gemwork                  -4.979e-01  1.290e-02 -38.609  < 2e-16 ***
+agency_index:nes_inq_std -4.954e-02  4.739e-02  -1.045  0.29590    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) agncy_ ns_nq_ age    gender hhsize gemedc gmhhnc gemocc
+agency_indx -0.034                                                        
+nes_inq_std -0.005 -0.006                                                 
+age         -0.761 -0.002  0.011                                          
+gender      -0.231  0.006 -0.004 -0.049                                   
+hhsize      -0.273 -0.014  0.025  0.101 -0.020                            
+gemeduc     -0.220  0.015 -0.026 -0.056 -0.038  0.076                     
+gemhhinc    -0.045  0.012  0.010 -0.024  0.063 -0.104 -0.147              
+gemoccu     -0.151 -0.001  0.028  0.041 -0.033 -0.046  0.077  0.048       
+gemwork     -0.222  0.036  0.019  0.217 -0.115 -0.009 -0.007  0.031 -0.192
+agncy_nd:__  0.001 -0.043 -0.047 -0.004  0.005  0.014 -0.007 -0.005 -0.012
+            gemwrk
+agency_indx       
+nes_inq_std       
+age               
+gender            
+hhsize            
+gemeduc           
+gemhhinc          
+gemoccu           
+gemwork           
+agncy_nd:__ -0.010
+fit warnings:
+Some predictor variables are on very different scales: consider rescaling. 
+You may also use (g)lmerControl(autoscale = TRUE) to improve numerical stability.
+
+
+MODEL 3: H3 - Agency × NECI Amplification
+tea_binary ~ agency_index + neci_overall_std + agency_index:neci_overall_std + controls + (1|country)
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: 
+tea_binary ~ agency_index + neci_overall_std + agency_index:neci_overall_std +  
+    age + gender + hhsize + gemeduc + gemhhinc + gemoccu + gemwork +  
+    (1 | country)
+   Data: df
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+  21899.8   22000.9  -10937.9   21875.8     33603 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.2334 -0.3587 -0.2576 -0.1751  9.0811 
+
+Random effects:
+ Groups  Name        Variance Std.Dev.
+ country (Intercept) 0.2582   0.5081  
+Number of obs: 33615, groups:  country, 47
+
+Fixed effects:
+                                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                   -2.498e+00  1.737e-01 -14.378  < 2e-16 ***
+agency_index                   6.182e-01  4.659e-02  13.269  < 2e-16 ***
+neci_overall_std              -8.924e-02  7.740e-02  -1.153  0.24891    
+age                            1.671e-02  5.123e-03   3.262  0.00111 ** 
+gender                        -2.162e-01  3.622e-02  -5.968 2.41e-09 ***
+hhsize                        -2.941e-03  9.161e-03  -0.321  0.74819    
+gemeduc                        1.751e-04  4.103e-05   4.266 1.99e-05 ***
+gemhhinc                       5.540e-06  5.849e-07   9.471  < 2e-16 ***
+gemoccu                        3.003e-01  7.083e-03  42.391  < 2e-16 ***
+gemwork                       -4.982e-01  1.289e-02 -38.635  < 2e-16 ***
+agency_index:neci_overall_std  2.338e-02  4.712e-02   0.496  0.61973    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) agncy_ nc_vr_ age    gender hhsize gemedc gmhhnc gemocc
+agency_indx -0.034                                                        
+nc_vrll_std  0.022 -0.012                                                 
+age         -0.762 -0.003  0.001                                          
+gender      -0.232  0.007  0.002 -0.049                                   
+hhsize      -0.273 -0.013  0.020  0.101 -0.020                            
+gemeduc     -0.221  0.013 -0.024 -0.056 -0.038  0.076                     
+gemhhinc    -0.045  0.012  0.005 -0.024  0.064 -0.104 -0.147              
+gemoccu     -0.151 -0.003  0.025  0.041 -0.033 -0.047  0.078  0.048       
+gemwork     -0.222  0.037  0.013  0.216 -0.115 -0.009 -0.007  0.031 -0.193
+agncy_nd:__  0.000  0.081 -0.090 -0.005  0.008  0.015 -0.019  0.001 -0.022
+            gemwrk
+agency_indx       
+nc_vrll_std       
+age               
+gender            
+hhsize            
+gemeduc           
+gemhhinc          
+gemoccu           
+gemwork           
+agncy_nd:__  0.005
+fit warnings:
+Some predictor variables are on very different scales: consider rescaling. 
+You may also use (g)lmerControl(autoscale = TRUE) to improve numerical stability.
+
+
+MODEL 4: H4 - Random Slopes for Agency (Robustness)
+tea_binary ~ agency_index + nes_inq_std + agency_index:nes_inq_std + controls + (agency_index|country)
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: tea_binary ~ agency_index + nes_inq_std + agency_index:nes_inq_std +  
+    age + gender + hhsize + gemeduc + gemhhinc + gemoccu + gemwork +  
+    (agency_index | country)
+   Data: df
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+  21899.3   22017.3  -10935.7   21871.3     33601 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.2977 -0.3586 -0.2572 -0.1748  8.9690 
+
+Random effects:
+ Groups  Name         Variance Std.Dev. Corr
+ country (Intercept)  0.26516  0.5149       
+         agency_index 0.05457  0.2336   0.10
+Number of obs: 33615, groups:  country, 47
+
+Fixed effects:
+                           Estimate Std. Error z value Pr(>|z|)    
+(Intercept)              -2.506e+00  1.744e-01 -14.368  < 2e-16 ***
+agency_index              6.013e-01  6.305e-02   9.537  < 2e-16 ***
+nes_inq_std              -1.061e-02  7.594e-02  -0.140  0.88893    
+age                       1.684e-02  5.129e-03   3.283  0.00103 ** 
+gender                   -2.158e-01  3.625e-02  -5.954 2.61e-09 ***
+hhsize                   -3.415e-03  9.171e-03  -0.372  0.70962    
+gemeduc                   1.763e-04  4.112e-05   4.288 1.80e-05 ***
+gemhhinc                  5.571e-06  5.857e-07   9.511  < 2e-16 ***
+gemoccu                   3.008e-01  7.091e-03  42.421  < 2e-16 ***
+gemwork                  -4.975e-01  1.291e-02 -38.538  < 2e-16 ***
+agency_index:nes_inq_std -2.726e-02  6.247e-02  -0.436  0.66262    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) agncy_ ns_nq_ age    gender hhsize gemedc gmhhnc gemocc
+agency_indx  0.002                                                        
+nes_inq_std -0.005 -0.012                                                 
+age         -0.761 -0.002  0.011                                          
+gender      -0.231  0.001 -0.004 -0.048                                   
+hhsize      -0.272 -0.010  0.025  0.101 -0.020                            
+gemeduc     -0.220  0.007 -0.025 -0.055 -0.038  0.075                     
+gemhhinc    -0.045  0.006  0.010 -0.024  0.063 -0.105 -0.147              
+gemoccu     -0.151  0.000  0.028  0.041 -0.033 -0.046  0.078  0.048       
+gemwork     -0.222  0.028  0.019  0.217 -0.115 -0.009 -0.008  0.031 -0.193
+agncy_nd:__ -0.004  0.029  0.024 -0.002  0.004  0.009 -0.005 -0.001 -0.009
+            gemwrk
+agency_indx       
+nes_inq_std       
+age               
+gender            
+hhsize            
+gemeduc           
+gemhhinc          
+gemoccu           
+gemwork           
+agncy_nd:__ -0.002
+fit warnings:
+Some predictor variables are on very different scales: consider rescaling. 
+You may also use (g)lmerControl(autoscale = TRUE) to improve numerical stability.

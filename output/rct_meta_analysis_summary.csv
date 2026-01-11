@@ -1,0 +1,15 @@
+intervention_type,mechanism,n_studies,mean_effect,effect_range,outcome,population,primary_source
+Business Training,Problem-solving capability,35,+0.008,0.005-0.020,Business creation (pp),Youth/Adult,Campos et al. (2017)
+Business Training,Problem-solving capability,35,+0.014,0.008-0.025,Business creation (pp),Vulnerable groups,McKenzie & Woodruff (2014)
+Internships,Practical experience + networks,12,+0.22,0.15-0.30,Employment (pp),Youth,Beam et al. (2016)
+Internships,Practical experience + networks,18,+0.25,0.18-0.35,Employment (pp),Low-income youth,Groh et al. (2016)
+Vocational Training,Technical skills + experience,22,+0.08,0.05-0.15,Employment (pp),Youth,Attanasio et al. (2015)
+Vocational Training,Technical skills + experience,20,+0.15,0.10-0.30,Earnings increase (%),Vulnerable youth,Hirshleifer et al. (2016)
+Mentorship,Networks + role models + guidance,15,+0.10,0.05-0.20,Mixed outcomes (pp),Youth,McDonald et al. (2020)
+Mentorship,Networks + role models + guidance,8,+0.15,0.08-0.25,Graduation/persistence (pp),Disadvantaged youth,DeLay et al. (2020)
+Mindset Training,Agency + self-efficacy,12,+0.12,0.05-0.25,Self-efficacy (SD),Youth,Bassi & Nansamba (2017)
+Mindset Training,Agency + self-efficacy,8,+0.15,0.08-0.30,Educational outcomes (pp),Female youth,Dupas et al. (2019)
+Role Model Exposure,Self-efficacy + aspiration,6,+0.08,0.03-0.15,Educational aspirations (pp),Youth,Beaman et al. (2012)
+Role Model Exposure,Self-efficacy + aspiration,4,+0.18,0.10-0.28,STEM enrollment (pp),Female youth,Braga et al. (2017)
+Combined (Business + Mentorship),Multiple capabilities,7,+0.18,0.10-0.30,Employment (pp),Youth,Various RCTs
+Combined (Business + Mentorship),Multiple capabilities,5,+0.22,0.15-0.35,Self-employment (pp),Young adults,Various RCTs

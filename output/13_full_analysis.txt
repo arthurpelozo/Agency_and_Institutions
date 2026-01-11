@@ -1,0 +1,154 @@
+﻿Rscript.exe : Warning message:
+No linha:1 caractere:80
++ ... Causality"; &"C:\Program Files\R\R-4.5.1\bin\Rscript.exe" "scripts\13 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Warning message::String) [], RemoteExc 
+   eption
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+package 'readxl' was built under R version 4.5.2 
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'fixest' was built under R version 4.5.2 
+
+============================================================
+REFORM IMPACTS BEYOND ENTREPRENEURSHIP: DiD BATTERY
+============================================================
+
+New names:
+ÔÇó `Procedures (number)` -> `Procedures (number)...19`
+ÔÇó `Time (days)` -> `Time (days)...20`
+ÔÇó `Procedures (number)` -> `Procedures (number)...25`
+ÔÇó `Time (days)` -> `Time (days)...26`
+ÔÇó `Procedures (number)` -> `Procedures (number)...31`
+ÔÇó `Time (days)` -> `Time (days)...32`
+ÔÇó `Time (days)` -> `Time (days)...77`
+Ô£ô Reforms computed: 145 countries
+There were 50 or more warnings (use warnings() to see the first 50)
+
+====================================================================== 
+RUNNING ALL ANALYSES
+====================================================================== 
+
+=== Business Registrations Analysis ===
+Ô£ô Data loaded: 2668 country-year observations
+  - Countries: 217 
+  - Year range: 2006 to 2020 
+  - Treated countries: 115 
+  - Control countries: 102 
+
+Running DiD: Business registrations per 1,000 working-age adults...
+NOTE: 3/0 fixed-effect singletons were removed (3 observations).
+
+OLS estimation, Dep. Var.: outcome
+Observations: 2,665
+Fixed-effects: economy: 214,  year: 15
+Standard-errors: Clustered (economy) 
+         Estimate Std. Error t value Pr(>|t|) 
+did_term  0.59289   0.460073 1.28868  0.19891 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 4.39666     Adj. R2: 0.947923
+                Within R2: 0.001152
+
+Ô£ô Effect interpretation:
+  - Control mean (pre-reform): 6.88 registrations per 1,000
+  - DiD coefficient: 0.59
+  - P-value: 0.1989
+  - Percentage change: 8.6%
+
+
+=== Youth NEET Rate Analysis ===
+File structure: time in rows, regions/countries in columns
+Columns found: 11 
+ÔÜá No individual country data found (only regional aggregates)
+  This dataset may not have country-level detail.
+
+=== Financial Inclusion Analysis ===
+Available sheets: Notes, Data, Series Table, Updates 
+Ô£ô Data loaded: 8474 country-year observations
+  - Countries: 174 
+  - Years: 2011, 2014, 2017, 2021, 2022, 2024 
+  - Treated countries: 115 
+  - Control countries: 59 
+
+Running DiD: Account ownership (%)...
+
+OLS estimation, Dep. Var.: outcome
+Observations: 8,474
+Fixed-effects: economy: 174,  year: 6
+Standard-errors: Clustered (economy) 
+          Estimate Std. Error   t value Pr(>|t|) 
+did_term -0.017743    0.01937 -0.915978  0.36095 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.109396     Adj. R2: 0.845654
+                 Within R2: 9.554e-4
+
+Ô£ô Effect interpretation:
+  - Control mean (pre-reform): 0.65% have accounts
+  - DiD coefficient: -0.02 percentage points
+  - P-value: 0.3610
+  - Percentage change: -2.7%
+
+Warning message:
+There were 2 warnings in `mutate()`.
+The first warning was:
+Ôä╣ In argument: `year = as.numeric(year)`.
+Caused by warning:
+! NAs introduced by coercion
+Ôä╣ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning. 
+
+====================================================================== 
+SUMMARY OF REFORM IMPACTS
+====================================================================== 
+
+Results:
+
+                            outcome        coef    pvalue significant
+did_term...1 business_registrations  0.59288961 0.1989057        Ô£ù NO
+did_term...2    financial_inclusion -0.01774269 0.3609533        Ô£ù NO
+              direction control_mean n_countries
+did_term...1 Ôåæ Increase    6.8835215         217
+did_term...2 Ôåô Decrease    0.6500706         174
+
+
+Interpretation:
+
+1. BUSINESS_REGISTRATIONS:
+   - Effect: 0.593 (p=0.1989) Ô£ù NO
+   - Countries: 217 | Observations: 2668
+   - FINDING: No significant reform effect detected
+
+2. FINANCIAL_INCLUSION:
+   - Effect: -0.018 (p=0.3610) Ô£ù NO
+   - Countries: 174 | Observations: 8474
+   - FINDING: No significant reform effect detected
+
+
+====================================================================== 
+POLICY IMPLICATIONS
+====================================================================== 
+
+ÔÜá NO SIGNIFICANT EFFECTS DETECTED
+
+Reforms alone do not significantly affect:
+- Business registrations (firm entry)
+- Youth employment/NEET rates
+- Financial inclusion
+
+Implication: Regulatory simplification is insufficient for development.
+Complementary interventions needed (training, finance, networks).
+
+
+Done. Check output/ for detailed results.

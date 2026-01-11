@@ -1,0 +1,115 @@
+Youth Value Creation Core Models
+Generated:  1768097637 
+
+Model 1: Agency baseline (country/year FE)
+GLM estimation, family = binomial, Dep. Var.: tea_binary
+Observations: 366,128
+Fixed-effects: country: 112,  year: 9
+Standard-errors: Clustered (country) 
+              Estimate Std. Error  z value  Pr(>|z|)    
+agency_index  2.094773   0.097027 21.58964 < 2.2e-16 ***
+female       -0.293273   0.035091 -8.35746 < 2.2e-16 ***
+age           0.064355   0.004101 15.69184 < 2.2e-16 ***
+gemeduc       0.000063   0.000027  2.33875  0.019348 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Log-Likelihood: -135,082.4   Adj. Pseudo R2: 0.116186
+           BIC:  271,753.3     Squared Cor.: 0.097253
+
+---
+
+Model 2: Components (inverse fear, skill, know, opport)
+GLM estimation, family = binomial, Dep. Var.: tea_binary
+Observations: 366,128
+Fixed-effects: country: 112,  year: 9
+Standard-errors: Clustered (country) 
+                    Estimate Std. Error  z value   Pr(>|z|)    
+I(1 - fear_binary)  0.162188   0.027430  5.91277 3.3640e-09 ***
+skill_binary        0.861340   0.037946 22.69882  < 2.2e-16 ***
+know_binary         0.659755   0.030853 21.38358  < 2.2e-16 ***
+opport_binary       0.347243   0.031683 10.95992  < 2.2e-16 ***
+female             -0.289576   0.034905 -8.29619  < 2.2e-16 ***
+age                 0.060575   0.004008 15.11234  < 2.2e-16 ***
+gemeduc             0.000050   0.000027  1.88155 5.9897e-02 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Log-Likelihood: -134,031.0   Adj. Pseudo R2: 0.12304 
+           BIC:  269,688.9     Squared Cor.: 0.100788
+
+---
+
+Model 3: Gender interaction
+GLM estimation, family = binomial, Dep. Var.: tea_binary
+Observations: 366,128
+Fixed-effects: country: 112,  year: 9
+Standard-errors: Clustered (country) 
+                     Estimate Std. Error  z value   Pr(>|z|)    
+agency_index         2.023370   0.095983 21.08049  < 2.2e-16 ***
+female              -0.391528   0.055861 -7.00902 2.3999e-12 ***
+age                  0.064400   0.004097 15.72004  < 2.2e-16 ***
+gemeduc              0.000063   0.000027  2.34299 1.9130e-02 *  
+agency_index:female  0.167662   0.059552  2.81538 4.8719e-03 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Log-Likelihood: -135,070.8   Adj. Pseudo R2: 0.116255
+           BIC:  271,743.0     Squared Cor.: 0.097345
+
+---
+
+Model 4: Employment interaction (subset with gemwork)
+GLM estimation, family = binomial, Dep. Var.: tea_binary
+Observations: 356,446
+Fixed-effects: country: 112,  year: 9
+Standard-errors: Clustered (country) 
+                       Estimate Std. Error  z value   Pr(>|z|)    
+agency_index           2.313237   0.117837 19.63078  < 2.2e-16 ***
+employed               1.651181   0.107914 15.30091  < 2.2e-16 ***
+female                -0.100833   0.038262 -2.63530 8.4062e-03 ** 
+age                    0.016904   0.004053  4.17039 3.0408e-05 ***
+gemeduc                0.000047   0.000025  1.86911 6.1607e-02 .  
+agency_index:employed -0.434853   0.118652 -3.66495 2.4738e-04 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Log-Likelihood: -124,563.7   Adj. Pseudo R2: 0.164685
+           BIC:  250,738.1     Squared Cor.: 0.142538
+
+---
+
+Model 5: Post-2018 stability interaction
+GLM estimation, family = binomial, Dep. Var.: tea_binary
+Observations: 366,128
+Fixed-effects: country: 112,  year: 9
+Standard-errors: Clustered (country) 
+                       Estimate Std. Error   z value   Pr(>|z|)    
+agency_index           2.826892   0.108069  26.15814  < 2.2e-16 ***
+female                -0.238578   0.034315  -6.95258 3.5867e-12 ***
+age                    0.061569   0.004002  15.38465  < 2.2e-16 ***
+gemeduc                0.000035   0.000026   1.37013 1.7065e-01    
+agency_index:post2018 -5.027247   0.189159 -26.57689  < 2.2e-16 ***
+... 1 variable was removed because of collinearity (post2018)
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Log-Likelihood: -131,493.8   Adj. Pseudo R2: 0.139638
+           BIC:  264,588.9     Squared Cor.: 0.119398
+
+---
+
+Model 6: Year-band stability (country FE, no year FE)
+GLM estimation, family = binomial, Dep. Var.: tea_binary
+Observations: 366,128
+Fixed-effects: country: 112
+Standard-errors: Clustered (country) 
+                            Estimate Std. Error    z value   Pr(>|z|)    
+agency_index                2.724233   0.118587  22.972536  < 2.2e-16 ***
+band2016_2017              -0.098762   0.100077  -0.986862 3.2371e-01    
+band2019_2020               2.568570   0.115452  22.247978  < 2.2e-16 ***
+female                     -0.239800   0.034174  -7.017021 2.2665e-12 ***
+age                         0.061458   0.004015  15.307994  < 2.2e-16 ***
+gemeduc                     0.000033   0.000026   1.264303 2.0612e-01    
+agency_index:band2016_2017  0.299298   0.128150   2.335519 1.9516e-02 *  
+agency_index:band2019_2020 -4.927713   0.194369 -25.352366  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Log-Likelihood: -131,612.0   Adj. Pseudo R2: 0.138898
+           BIC:  264,761.3     Squared Cor.: 0.118673
+

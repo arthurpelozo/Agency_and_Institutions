@@ -1,0 +1,3 @@
+"outcome","coef","se","pvalue","control_mean","effect_pct","n_countries","n_obs","significant","direction"
+"business_registrations",0.592889608666714,0.460073459561858,0.198905673004879,6.88352152358915,8.61317287430481,217,2668,"✗ NO","↑ Increase"
+"financial_inclusion",-0.0177426909750366,0.0193702089624141,0.360953321895706,0.650070632006508,-2.7293481817925,174,8474,"✗ NO","↓ Decrease"

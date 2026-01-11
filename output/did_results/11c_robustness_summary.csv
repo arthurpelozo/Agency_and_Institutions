@@ -1,0 +1,7 @@
+specification,coefficient,p_value,sig
+1. Baseline DiD (Phase 4),0.0019,0.224,
+2. Dynamic DiD: Reform year (t=0),-0.03936185028893064,4.4786610238238016e-11,***
+3. Dynamic DiD: Post-reform average (t≥1),-0.03970505519216534,NA,
+4. Excluding baseline outliers,0.0062077319352944575,7.95590168233089e-6,***
+5. Middle adopters only,-6.309703031541715e-4,0.6536134432999257,
+6. Balanced panel only,3.1479897492878677e-4,0.8406734680876119,

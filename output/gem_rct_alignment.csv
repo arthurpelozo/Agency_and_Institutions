@@ -1,0 +1,9 @@
+GEM_finding,RCT_evidence,mechanism_alignment,effect_size
+Agency → TEA (β=2.09),Combined training + mentorship,Capability building multiplier,Synergistic
+Skills → TEA (β=0.86),Business training + vocational,Problem-solving + technical skills,Strong (0.8-1.0)
+Networks → TEA (β=0.66),Mentorship + internships,Access to contacts + opportunities,Moderate-Strong (0.6-0.8)
+Opportunity → TEA (β=0.35),All interventions,Exposure + opportunity recognition,Weak-Moderate (0.3-0.5)
+Low fear → TEA (β=0.16),Mindset + role models,Self-efficacy + confidence,Weak (0.1-0.2)
+Female penalty (β=-0.29),Mentorship effects larger for women,Role models + targeted support,Moderating
+Employment dampening (β=-0.43),Employed have less time/motivation,Opportunity cost of employment,Negative interaction
+Post-2019 shift (β=-4.93),COVID context + gig economy rise,Structural economic change,Large break

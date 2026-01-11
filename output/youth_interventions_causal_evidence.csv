@@ -1,0 +1,12 @@
+intervention_type,typical_effect,evidence_strength,cost,scalability,je_alignment,key_references
+Skills Training (vocational),+5-15% employment,Strong (many RCTs),Medium ($500-2000/person),Medium (training capacity limits),"Medium (JE builds business skills, not vocational)","Cho et al. (2013), Hirshleifer et al. (2016)"
+Skills Training (business/entrepreneurship),+0.5-2pp entrepreneurship,Moderate (several RCTs),Low-Medium ($200-1000/person),High (classroom-based),HIGH (core JE model),"Campos et al. (2017), Karlan & Valdivia (2011)"
+Internships/Work Experience,+15-30% employment,Strong (many RCTs),Low (if private sector pays),Medium (employer capacity limits),VERY HIGH (JE IS internship-like experience),"Beam et al. (2016), Groh et al. (2016)"
+Mentorship Programs,+10-20% various outcomes,Moderate (growing RCT base),Low ($100-500/person),Medium (mentor recruitment),HIGH (peer mentorship core to JE),"Loureiro et al. (2017), McDonald et al. (2020)"
+Cash Grants (for business),+10-15pp business ownership,Strong (multiple RCTs),High ($500-2000 grant),Low (funding constraints),Low (JE doesn't provide capital),"Blattman et al. (2014), Fafchamps et al. (2014)"
+Cash Grants (unconditional),+5-10pp self-employment,Moderate (RCTs mixed results),High ($300-1000 grant),Low (funding constraints),Low (not JE model),Haushofer & Shapiro (2016)
+Business Plan Competitions,+5-10pp startup rate (winners),Weak (few causal studies),Low-Medium ($100-500/participant),High (digital platforms),Medium (JE could host competitions),McKenzie (2017)
+Incubators/Accelerators,+20-40% survival (2 years),Moderate (quasi-experimental),Medium ($500-5000/participant),Low (intensive support needs),HIGH (JE functions like incubator),"Yu (2020), Gonzalez-Uribe & Leatherbee (2017)"
+Mindset/Soft Skills Training,+0.2-0.5 SD self-efficacy,Weak (small RCTs),Low ($50-200/person),High (classroom/online),HIGH (JE builds confidence/agency),Campos et al. (2017)
+Job Search Assistance,+10-15% employment,Moderate (RCTs),Low ($50-300/person),High (online platforms),"Medium (JE provides networks, not job search)","Abel et al. (2019), Abebe et al. (2021)"
+Wage Subsidies,+20-30% employment (temporary),"Strong (RCTs, but temporary)",High ($1000-5000/person/year),Low (fiscal constraints),Low (not JE model),Card et al. (2018)

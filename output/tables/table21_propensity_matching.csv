@@ -1,0 +1,8 @@
+analysis,n_treated,n_control,treatment_effect_pp,interpretation
+Baseline (unmatched),16807,16808,6.259927889795245,Naive difference (biased)
+After matching - Simple,15607,15607,5.619273402960211,ATT after PSM
+After matching - Regression adjusted,15607,15607,0.6188808367498511,Regression-adjusted ATT
+Heterogeneous: Female,7437,7566,5.525235798113615,Effect for women
+Heterogeneous: Male,8170,8041,5.65565447085681,Effect for men
+Heterogeneous: Low institutions,8015,7941,6.674808433972222,Effect in weak institutions
+Heterogeneous: High institutions,7592,7666,4.508078587673955,Effect in strong institutions
