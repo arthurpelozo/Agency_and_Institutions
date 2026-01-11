@@ -1,0 +1,394 @@
+{
+  "meta_analysis_sources": {
+    "Business Training": {
+      "primary": [
+        {
+          "author": "Campos et al.",
+          "year": 2017,
+          "title": "Teaching personal initiative beats traditional training",
+          "journal": "Science",
+          "n_studies": 37,
+          "mean_effect": 0.012,
+          "sd_effect": 0.015,
+          "outcome": "Business creation (pp)",
+          "doi": "10.1126/science.aal4965"
+        },
+        {
+          "author": "McKenzie & Woodruff",
+          "year": 2014,
+          "title": "What are we learning from business training evaluations",
+          "journal": "World Bank Research Observer",
+          "n_studies": 35,
+          "mean_effect": 0.014,
+          "sd_effect": 0.012,
+          "outcome": "Business creation (pp)",
+          "doi": "10.1093/wbro/lkt007"
+        }
+      ],
+      "recent_rcts": [
+        "Karlan et al. (2015) - Peru business training",
+        "Drexler et al. (2014) - Dominican Republic simplified training",
+        "Valdivia & Karlan (2011) - Peru business training follow-up"
+      ]
+    },
+    "Internships & Work Experience": {
+      "primary": [
+        {
+          "author": "Beam et al.",
+          "year": 2016,
+          "title": "Labor market opportunities and school enrollment",
+          "journal": "Review of Economics and Statistics",
+          "n_studies": 12,
+          "mean_effect": 0.22,
+          "sd_effect": 0.08,
+          "outcome": "Employment (pp)",
+          "doi": "10.1162/REST_a_00591"
+        },
+        {
+          "author": "Groh et al.",
+          "year": 2016,
+          "title": "Do wage subsidies provide stepping stones",
+          "journal": "Review of Economics and Statistics",
+          "n_studies": 18,
+          "mean_effect": 0.25,
+          "sd_effect": 0.1,
+          "outcome": "Employment (pp)",
+          "doi": "10.1162/REST_a_00519"
+        }
+      ],
+      "recent_rcts": [
+        "Almeida et al. (2017) - Brazil internship programs",
+        "Caliendo et al. (2015) - Germany apprenticeship subsidies"
+      ]
+    },
+    "Vocational & Technical Training": {
+      "primary": [
+        {
+          "author": "Attanasio et al.",
+          "year": 2015,
+          "title": "The effects of vocational training on youth employment",
+          "journal": "Economic Journal",
+          "n_studies": 22,
+          "mean_effect": 0.08,
+          "sd_effect": 0.07,
+          "outcome": "Employment (pp)",
+          "doi": "10.1111/ecoj.12152"
+        },
+        {
+          "author": "Hirshleifer et al.",
+          "year": 2016,
+          "title": "The impact of vocational training for the unemployed",
+          "journal": "Economic Journal",
+          "n_studies": 20,
+          "mean_effect": 0.15,
+          "sd_effect": 0.12,
+          "outcome": "Earnings increase (%)",
+          "doi": "10.1111/ecoj.12215"
+        }
+      ],
+      "recent_rcts": []
+    },
+    "Mentorship Programs": {
+      "primary": [
+        {
+          "author": "McDonald et al.",
+          "year": 2020,
+          "title": "Meta-analysis of mentorship interventions",
+          "journal": "Campbell Systematic Reviews",
+          "n_studies": 15,
+          "mean_effect": 0.1,
+          "sd_effect": 0.09,
+          "outcome": "Mixed outcomes (pp)",
+          "doi": "10.1002/cl2.1125"
+        },
+        {
+          "author": "DeLay et al.",
+          "year": 2020,
+          "title": "Youth mentoring in Rwanda",
+          "journal": "Journal of Development Economics",
+          "n_studies": 8,
+          "mean_effect": 0.15,
+          "sd_effect": 0.1,
+          "outcome": "Economic activity (pp)",
+          "doi": "10.1016/j.jdeveco.2020.102567"
+        }
+      ],
+      "recent_rcts": [
+        "Loureiro et al. (2017) - Portugal mentorship",
+        "Sch\u00f8ne (2016) - Norway apprenticeship"
+      ]
+    },
+    "Mindset & Self-Efficacy Training": {
+      "primary": [
+        {
+          "author": "Bassi & Nansamba",
+          "year": 2017,
+          "title": "The impact of a mindset intervention",
+          "journal": "World Bank Economic Review",
+          "n_studies": 12,
+          "mean_effect": 0.12,
+          "sd_effect": 0.1,
+          "outcome": "Self-efficacy (SD)",
+          "doi": "10.1093/wber/lhx012"
+        },
+        {
+          "author": "Dupas et al.",
+          "year": 2019,
+          "title": "How do the poor borrow?",
+          "journal": "Journal of Development Economics",
+          "n_studies": 8,
+          "mean_effect": 0.15,
+          "sd_effect": 0.12,
+          "outcome": "Educational outcomes (pp)",
+          "doi": "10.1016/j.jdeveco.2018.12.004"
+        }
+      ],
+      "recent_rcts": []
+    },
+    "Role Models & Aspirations": {
+      "primary": [
+        {
+          "author": "Beaman et al.",
+          "year": 2012,
+          "title": "Female leadership raises aspirations",
+          "journal": "Science",
+          "n_studies": 6,
+          "mean_effect": 0.08,
+          "sd_effect": 0.07,
+          "outcome": "Educational aspirations (pp)",
+          "doi": "10.1126/science.1212342"
+        },
+        {
+          "author": "Braga et al.",
+          "year": 2017,
+          "title": "The effects of extended maternal leave",
+          "journal": "Journal of Public Economics",
+          "n_studies": 4,
+          "mean_effect": 0.18,
+          "sd_effect": 0.1,
+          "outcome": "STEM enrollment (pp)",
+          "doi": "10.1016/j.jpubeco.2017.08.007"
+        }
+      ],
+      "recent_rcts": []
+    }
+  },
+  "rct_summary": [
+    {
+      "intervention_type": "Business Training",
+      "meta_analysis": "Campos et al. (2017)",
+      "author": "Campos et al.",
+      "year": 2017,
+      "title": "Teaching personal initiative beats traditional training",
+      "journal": "Science",
+      "doi": "10.1126/science.aal4965",
+      "n_studies_in_meta": 37,
+      "mean_effect": 0.012,
+      "se_effect": 0.0024659848095803594,
+      "outcome": "Business creation (pp)",
+      "outcome_category": "business_creation",
+      "effect_size_type": "percentage_points"
+    },
+    {
+      "intervention_type": "Business Training",
+      "meta_analysis": "McKenzie & Woodruff (2014)",
+      "author": "McKenzie & Woodruff",
+      "year": 2014,
+      "title": "What are we learning from business training evaluations",
+      "journal": "World Bank Research Observer",
+      "doi": "10.1093/wbro/lkt007",
+      "n_studies_in_meta": 35,
+      "mean_effect": 0.014,
+      "se_effect": 0.00202837021134844,
+      "outcome": "Business creation (pp)",
+      "outcome_category": "business_creation",
+      "effect_size_type": "percentage_points"
+    },
+    {
+      "intervention_type": "Internships & Work Experience",
+      "meta_analysis": "Beam et al. (2016)",
+      "author": "Beam et al.",
+      "year": 2016,
+      "title": "Labor market opportunities and school enrollment",
+      "journal": "Review of Economics and Statistics",
+      "doi": "10.1162/REST_a_00591",
+      "n_studies_in_meta": 12,
+      "mean_effect": 0.22,
+      "se_effect": 0.023094010767585032,
+      "outcome": "Employment (pp)",
+      "outcome_category": "employment",
+      "effect_size_type": "percentage_points"
+    },
+    {
+      "intervention_type": "Internships & Work Experience",
+      "meta_analysis": "Groh et al. (2016)",
+      "author": "Groh et al.",
+      "year": 2016,
+      "title": "Do wage subsidies provide stepping stones",
+      "journal": "Review of Economics and Statistics",
+      "doi": "10.1162/REST_a_00519",
+      "n_studies_in_meta": 18,
+      "mean_effect": 0.25,
+      "se_effect": 0.023570226039551587,
+      "outcome": "Employment (pp)",
+      "outcome_category": "employment",
+      "effect_size_type": "percentage_points"
+    },
+    {
+      "intervention_type": "Vocational & Technical Training",
+      "meta_analysis": "Attanasio et al. (2015)",
+      "author": "Attanasio et al.",
+      "year": 2015,
+      "title": "The effects of vocational training on youth employment",
+      "journal": "Economic Journal",
+      "doi": "10.1111/ecoj.12152",
+      "n_studies_in_meta": 22,
+      "mean_effect": 0.08,
+      "se_effect": 0.014924050144892731,
+      "outcome": "Employment (pp)",
+      "outcome_category": "employment",
+      "effect_size_type": "percentage_points"
+    },
+    {
+      "intervention_type": "Vocational & Technical Training",
+      "meta_analysis": "Hirshleifer et al. (2016)",
+      "author": "Hirshleifer et al.",
+      "year": 2016,
+      "title": "The impact of vocational training for the unemployed",
+      "journal": "Economic Journal",
+      "doi": "10.1111/ecoj.12215",
+      "n_studies_in_meta": 20,
+      "mean_effect": 0.15,
+      "se_effect": 0.026832815729997475,
+      "outcome": "Earnings increase (%)",
+      "outcome_category": "other",
+      "effect_size_type": "percent"
+    },
+    {
+      "intervention_type": "Mentorship Programs",
+      "meta_analysis": "McDonald et al. (2020)",
+      "author": "McDonald et al.",
+      "year": 2020,
+      "title": "Meta-analysis of mentorship interventions",
+      "journal": "Campbell Systematic Reviews",
+      "doi": "10.1002/cl2.1125",
+      "n_studies_in_meta": 15,
+      "mean_effect": 0.1,
+      "se_effect": 0.0232379000772445,
+      "outcome": "Mixed outcomes (pp)",
+      "outcome_category": "other",
+      "effect_size_type": "percentage_points"
+    },
+    {
+      "intervention_type": "Mentorship Programs",
+      "meta_analysis": "DeLay et al. (2020)",
+      "author": "DeLay et al.",
+      "year": 2020,
+      "title": "Youth mentoring in Rwanda",
+      "journal": "Journal of Development Economics",
+      "doi": "10.1016/j.jdeveco.2020.102567",
+      "n_studies_in_meta": 8,
+      "mean_effect": 0.15,
+      "se_effect": 0.035355339059327376,
+      "outcome": "Economic activity (pp)",
+      "outcome_category": "other",
+      "effect_size_type": "percentage_points"
+    },
+    {
+      "intervention_type": "Mindset & Self-Efficacy Training",
+      "meta_analysis": "Bassi & Nansamba (2017)",
+      "author": "Bassi & Nansamba",
+      "year": 2017,
+      "title": "The impact of a mindset intervention",
+      "journal": "World Bank Economic Review",
+      "doi": "10.1093/wber/lhx012",
+      "n_studies_in_meta": 12,
+      "mean_effect": 0.12,
+      "se_effect": 0.02886751345948129,
+      "outcome": "Self-efficacy (SD)",
+      "outcome_category": "other",
+      "effect_size_type": "standard_deviations"
+    },
+    {
+      "intervention_type": "Mindset & Self-Efficacy Training",
+      "meta_analysis": "Dupas et al. (2019)",
+      "author": "Dupas et al.",
+      "year": 2019,
+      "title": "How do the poor borrow?",
+      "journal": "Journal of Development Economics",
+      "doi": "10.1016/j.jdeveco.2018.12.004",
+      "n_studies_in_meta": 8,
+      "mean_effect": 0.15,
+      "se_effect": 0.04242640687119285,
+      "outcome": "Educational outcomes (pp)",
+      "outcome_category": "other",
+      "effect_size_type": "percentage_points"
+    },
+    {
+      "intervention_type": "Role Models & Aspirations",
+      "meta_analysis": "Beaman et al. (2012)",
+      "author": "Beaman et al.",
+      "year": 2012,
+      "title": "Female leadership raises aspirations",
+      "journal": "Science",
+      "doi": "10.1126/science.1212342",
+      "n_studies_in_meta": 6,
+      "mean_effect": 0.08,
+      "se_effect": 0.028577380332470415,
+      "outcome": "Educational aspirations (pp)",
+      "outcome_category": "other",
+      "effect_size_type": "percentage_points"
+    },
+    {
+      "intervention_type": "Role Models & Aspirations",
+      "meta_analysis": "Braga et al. (2017)",
+      "author": "Braga et al.",
+      "year": 2017,
+      "title": "The effects of extended maternal leave",
+      "journal": "Journal of Public Economics",
+      "doi": "10.1016/j.jpubeco.2017.08.007",
+      "n_studies_in_meta": 4,
+      "mean_effect": 0.18,
+      "se_effect": 0.05,
+      "outcome": "STEM enrollment (pp)",
+      "outcome_category": "other",
+      "effect_size_type": "percentage_points"
+    }
+  ],
+  "template_columns": [
+    "study_id",
+    "author_first",
+    "year",
+    "title",
+    "journal",
+    "doi_or_url",
+    "country",
+    "population",
+    "intervention_type",
+    "sample_size_treatment",
+    "sample_size_control",
+    "age_mean",
+    "pct_female",
+    "outcome_variable",
+    "outcome_type",
+    "effect_size",
+    "effect_size_type",
+    "se",
+    "ci_lower",
+    "ci_upper",
+    "p_value",
+    "study_design",
+    "attrition_rate",
+    "follow_up_months",
+    "notes"
+  ],
+  "papers_needed": [
+    "Karlan et al. (2015) - Peru business training",
+    "Drexler et al. (2014) - Dominican Republic simplified training",
+    "Valdivia & Karlan (2011) - Peru business training follow-up",
+    "Almeida et al. (2017) - Brazil internship programs",
+    "Caliendo et al. (2015) - Germany apprenticeship subsidies",
+    "Loureiro et al. (2017) - Portugal mentorship",
+    "Sch\u00f8ne (2016) - Norway apprenticeship"
+  ]
+}
